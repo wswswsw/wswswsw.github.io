@@ -1,0 +1,144 @@
+body {
+    font-family: 'Cinzel', serif;
+}
+
+.thumb img {
+    width: 45px; 
+    padding-right: 3%;
+}
+
+#home {
+    display:flex;
+    background:
+    linear-gradient(
+        rgba(10,10,10,.45),
+        rgba(10,10,10,.45)
+        ),
+        url(../images/kim.jpg);
+    background-size: cover;
+    color: white;
+    height: 50vw;
+}
+
+.rot {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+#history {
+    padding: 5%;
+    background:black;
+}
+
+#history img {
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: maroon;
+    font-size: 150%;
+    text-align: center;
+  }
+
+#history:hover .overlay {
+    opacity: 0;
+  }
+
+#cities {
+    display: flex;
+    justify-content: center;
+    padding-right:5%;
+    padding-top:5%;
+    background-color: black;
+    background-image:url(../images/monuments.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    color: maroon;
+}
+
+#cities img {
+    height:250px;
+    width:100%;
+    border-style: groove;
+    border-color: white;
+}
+
+#cities h2 {
+    padding-left: 5%;
+}
+
+.grow:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    z-index: 1;
+    position: relative;
+    }
+
+    #visit {
+        padding-top: 5%;
+    }
+
+    #visit i {
+        font-size: 120%;
+        color: maroon;
+    }
+
+    #visit h2, p, h3 {
+        text-align: center;
+    }
+
+    .sexy_line { 
+        margin: 25px 0;
+        height: 1px;
+        background: black;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+    }
+
+    footer {
+        text-align:center;
+    }
+
+    .at {
+        font-size: 200%;
+        color:red;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+        color: maroon;
